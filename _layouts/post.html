@@ -44,15 +44,8 @@
       <div class="social-share"></div>
     </div>
     {% endif %}
-    
-    <!-- comment -->
-    {% if site.comments.disqus %}
-	    <section class="post-footer-item comment">
-	        {% include disqus.html %}
-	    </section>
-    {% endif %}
   </div>
-
+  
   <section class="author-detail">
     <section class="post-footer-item author-card">
       <div class="avatar">
@@ -105,6 +98,13 @@
     </section>
   </section>
 
+  <!-- comment -->
+  {% if site.comments.disqus %}
+   <section class="post-footer-item comment">
+       {% include disqus.html %}
+   </section>
+  {% endif %}
+  
   {% include footer.html %}
 
   <script src="/assets/js/social-share.min.js"></script>
