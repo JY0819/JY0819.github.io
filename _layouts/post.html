@@ -38,10 +38,18 @@
       {{ page.content }}
     </article>
 
+    <!-- Social media shares -->
     {% if site.social-share %}
     <div class="social-share-wrapper">
       <div class="social-share"></div>
     </div>
+    {% endif %}
+    
+    <!-- comment -->
+    {% if site.comments.disqus %}
+	    <section class="post-footer-item comment">
+	        {% include disqus.html %}
+	    </section>
     {% endif %}
   </div>
 
@@ -95,11 +103,6 @@
       </div>
       {% endif %}
     </section>
-    {% if site.comments.disqus %}
-    <section class="post-footer-item comment">
-        <div id="disqus_thread"></div>
-    </section>
-    {% endif %}
   </section>
 
   {% include footer.html %}
@@ -118,11 +121,6 @@
       wechatQrcodeHelper: '<p>코드를 스캔 한 후 오른쪽 상단의을 클릭하십시오.</p><p>친구의 서클에이 기사를 공유하십시오.</p>'
     });
   </script>
-
-  <!-- Disqus -->
-  {% if site.comments.disqus %}
-  	{% include disqus.html %}
-  {% endif %}
 
   <script src="/assets/js/prism.js"></script>
   <script src="/assets/js/index.min.js"></script>

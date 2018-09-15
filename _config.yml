@@ -14,13 +14,17 @@ nav:
 
 # Footer
 footer:
-  since: 2017
+  since: 2018
 
 # Author 
 author: 'JuYoung-Lee'
 nickname: 'Ju'
 bio: '자바개발자'
 avatar: '/assets/img/profile.jpg'
+
+# Comments Disqus
+comments: 
+  disqus: true
 
 # Search
 search: true
@@ -32,8 +36,8 @@ nightMode: true
 mathjax: true
 
 # Share
-social-share: false
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share: true
+social-share-items: ['facebook', 'twitter', 'google'] # ["weibo","qq","wechat","tencent","douban","qzone","linkedin","diandian","facebook","twitter","google"
 
 # theme color 테마스킨
 theme-color: 'default'  # pink or default
