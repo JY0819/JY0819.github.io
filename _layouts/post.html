@@ -96,15 +96,17 @@
       </div>
       {% endif %}
     </section>
+    
+    
+    <!-- comment -->
+    {% if site.comments.disqus %}
+    <section class="post-footer-item comment">
+       {% include disqus.html %}
+    </section>
+    {% endif %}
+  
   </section>
 
-  <!-- comment -->
-  {% if site.comments.disqus %}
-   <section class="post-footer-item comment">
-       {% include disqus.html %}
-   </section>
-  {% endif %}
-  
   {% include footer.html %}
 
   <script src="/assets/js/social-share.min.js"></script>
