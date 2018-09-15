@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /diary/
+Sitemap: https://jy0819.github.io/sitemap.xml
