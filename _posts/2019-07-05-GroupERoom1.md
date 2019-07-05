@@ -5,7 +5,7 @@ subtitle: 'Spring 개인 프로젝트'
 date: 2019-07-05
 categories: Spring
 author: JY
-cover: '![GroupERoom](https://user-images.githubusercontent.com/38846776/60692229-e9f53d80-9f0f-11e9-9db0-57af4176da3a.png)' 
+cover: 'https://user-images.githubusercontent.com/38846776/60692229-e9f53d80-9f0f-11e9-9db0-57af4176da3a.png' 
 tags: Spring
 ---
 
