@@ -127,7 +127,7 @@ borwse 버튼을 통해 경로를 방금 설정한 settings.xml까지 잡아준�
 10. <listener> 태그 주석 처리하고 webapp 아래에 index.jsp 생성하고 서버 실행
 --> 성공적으로 인덱스 페이지 로드
 
-![0705_12](https://user-images.githubusercontent.com/38846776/60703929-fa241180-9f3d-11e9-895d-cbd65f0a37ce.PNG)
+'https://user-images.githubusercontent.com/38846776/60703929-fa241180-9f3d-11e9-895d-cbd65f0a37ce.PNG'
 
 
 
