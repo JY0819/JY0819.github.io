@@ -12,12 +12,12 @@ tags: Spring, Maven, GitHub
 # Spring 환경셋팅
 
 ## 190705 
-0. 프로젝트 시작 전, 필요한 셋팅들
+1. 프로젝트 시작 전, 필요한 셋팅들
 - 자바 JDK, Eclipse 설치
 - 환경 변수 설정
 - Eclipse MarketPlace에서 STS 설치
 
-1. 이클립스에서 새로운 프로젝트 생성
+2. 이클립스에서 새로운 프로젝트 생성
 - New -> Other -> Spring Legacy Project
 ![0705_1](https://user-images.githubusercontent.com/38846776/60693122-f7acc200-9f13-11e9-805e-01da4fae6f8f.PNG)
 
@@ -32,10 +32,10 @@ tags: Spring, Maven, GitHub
 - 생성 후, 초기 구조
 ![0705_4](https://user-images.githubusercontent.com/38846776/60693253-920d0580-9f14-11e9-80b4-bf44d0080897.PNG)
 
-2. 프로젝트 생성하면서 problems 탭 켜놓고 에러 확인
+3. 프로젝트 생성하면서 problems 탭 켜놓고 에러 확인
 메이븐 update project 한번 해주기
 
-3. Tomcat 실행해보기 (v8.5.35 사용) 
+4. Tomcat 실행해보기 (v8.5.35 사용) 
 - console에 오류가 찍힌다.
 ![0705_5](https://user-images.githubusercontent.com/38846776/60694051-b4ece900-9f17-11e9-81c8-59f684361eb5.PNG)
 읽어보니 ```[The absolute uri: [http://java.sun.com/jsp/jstl/core] cannot be resolved``
@@ -53,7 +53,7 @@ tags: Spring, Maven, GitHub
 콘솔에서는 HomeController에서 적혀진 로그에 따라 다음과 같이 출력된다.
 ```INFO : com.jy.ger.HomeController - Welcome home! The client locale is ko_KR.``
 
-4. pom.xml의 설정 변경
+5. pom.xml의 설정 변경
 <properties>태그의 내용을 다음과 같이 변경
 	
 ```
@@ -65,15 +65,14 @@ tags: Spring, Maven, GitHub
 	</properties>
 ```
 
-5. project faects 변경
+6. project faects 변경
 프로젝트 alt + Enter를 통해 properties의 project facets를 변경한다.
 - JAVA의 버전을 1.8로
 - Runtimes 탭의 서버에 체크
 
-
 ![0705_8](https://user-images.githubusercontent.com/38846776/60700888-77e31f80-9f34-11e9-9056-a5358ee2d8cf.PNG)
 
-6. maven 설정
+7. maven 설정
 - 메이븐 다운로드(v3.6.0)
 - 메이픈 폴더 안에 repository 폴더 생성
  ![0705_9](https://user-images.githubusercontent.com/38846776/60701418-ac57db00-9f36-11e9-972c-867c93df9c85.PNG)
@@ -93,7 +92,7 @@ tags: Spring, Maven, GitHub
 borwse 버튼을 통해 경로를 방금 설정한 settings.xml까지 잡아준다.
 *메이븐 업데이트까지 해주자*
 
-7. 폴더 변경
+8. 폴더 변경
 - WEB-INF/spring 폴더명을 config로 수정
 - confing/appServlet/servlet-context.xml을 config 아래로 이동
 - servlet-context.xml -> action-servlet.xml으로 변경
@@ -101,7 +100,7 @@ borwse 버튼을 통해 경로를 방금 설정한 settings.xml까지 잡아준�
 
 ![0705_11](https://user-images.githubusercontent.com/38846776/60702947-52a5df80-9f3b-11e9-8795-cf9060c0d1ad.PNG)
 
-8. web.xml
+9. web.xml
 
 ```
 <context-param>
@@ -125,8 +124,11 @@ borwse 버튼을 통해 경로를 방금 설정한 settings.xml까지 잡아준�
 ```
 
 
-9. <listener> 태그 주석 처리하고 webapp 아래에 index.jsp 생성하고 서버 실행
+10. <listener> 태그 주석 처리하고 webapp 아래에 index.jsp 생성하고 서버 실행
 --> 성공적으로 인덱스 페이지 로드
 
 ![0705_12](https://user-images.githubusercontent.com/38846776/60703929-fa241180-9f3d-11e9-895d-cbd65f0a37ce.PNG)
 
+
+
+????
