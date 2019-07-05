@@ -5,7 +5,7 @@ subtitle: 'Spring 개인 프로젝트'
 date: 2019-07-05
 categories: Spring
 author: JY
-cover: ![IndexLogo](https://user-images.githubusercontent.com/38846776/60691645-376fab80-9f0c-11e9-8b47-293ba3cd7c81.png)
+cover: 'https://user-images.githubusercontent.com/38846776/60691697-8e758080-9f0c-11e9-9bed-0cba9ecf8deb.png'
 tags: Spring
 ---
 
@@ -20,3 +20,5 @@ tags: Spring
 
 1. 
 dsad
+
+![IndexLogo](https://user-images.githubusercontent.com/38846776/60691697-8e758080-9f0c-11e9-9bed-0cba9ecf8deb.png)
