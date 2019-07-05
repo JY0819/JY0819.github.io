@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'GroupERoom'
+title: 'GroupERoom - 프로젝트 진행 로그'
 subtitle: 'Spring 개인 프로젝트'
 date: 2019-07-05
 categories: Spring
@@ -19,6 +19,6 @@ tags: Spring
 - 
 
 1. 
-dsad
+
 
 
