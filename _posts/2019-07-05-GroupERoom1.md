@@ -5,8 +5,8 @@ subtitle: 'Spring 개인 프로젝트'
 date: 2019-07-05
 categories: Spring
 author: JY
-cover: ![IndexLogo](./upload/IndexLogo.png)
-tags: Spring, Groupware
+cover: ![IndexLogo](./JY0819.github.io/assets/uploadIndexLogo.png)
+tags: Spring
 ---
 
 # Spring 환경세팅
