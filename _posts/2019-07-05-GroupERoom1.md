@@ -38,7 +38,12 @@ tags: Spring, Maven, GitHub
 4. Tomcat 실행해보기 (v8.5.35 사용) 
 - console에 오류가 찍힌다.
 ![0705_5](https://user-images.githubusercontent.com/38846776/60694051-b4ece900-9f17-11e9-81c8-59f684361eb5.PNG)
-읽어보니 ```[The absolute uri: [http://java.sun.com/jsp/jstl/core] cannot be resolved``
+읽어보니
+ 
+```
+[The absolute uri: [http://java.sun.com/jsp/jstl/core] cannot be resolved
+```
+
 라는 오류가 눈에 띈다. 
 
 - jstl jar 파일을 프로젝트에 넣어준다.
@@ -51,18 +56,21 @@ tags: Spring, Maven, GitHub
 - 다시 톰캣을 실행했을 때, 정상적으로 home 페이지가 나오는 것을 확인.
 ![0705_7](https://user-images.githubusercontent.com/38846776/60700466-fccd3980-9f32-11e9-8ba1-5ce0494d4d94.PNG)
 콘솔에서는 HomeController에서 적혀진 로그에 따라 다음과 같이 출력된다.
-```INFO : com.jy.ger.HomeController - Welcome home! The client locale is ko_KR.``
+
+```
+INFO : com.jy.ger.HomeController - Welcome home! The client locale is ko_KR.
+```
 
 5. pom.xml의 설정 변경
 <properties>태그의 내용을 다음과 같이 변경
 	
 ```
 <properties>
-		<java-version>1.8</java-version>
-		<org.springframework-version>5.0.8.RELEASE</org.springframework-version>
-		<org.aspectj-version>1.8.13</org.aspectj-version>
-		<org.slf4j-version>1.7.25</org.slf4j-version>
-	</properties>
+	<java-version>1.8</java-version>
+	<org.springframework-version>5.0.8.RELEASE</org.springframework-version>
+	<org.aspectj-version>1.8.13</org.aspectj-version>
+	<org.slf4j-version>1.7.25</org.slf4j-version>
+</properties>
 ```
 
 6. project faects 변경
@@ -127,8 +135,8 @@ borwse 버튼을 통해 경로를 방금 설정한 settings.xml까지 잡아준�
 10. <listener> 태그 주석 처리하고 webapp 아래에 index.jsp 생성하고 서버 실행
 --> 성공적으로 인덱스 페이지 로드
 
-'https://user-images.githubusercontent.com/38846776/60703929-fa241180-9f3d-11e9-895d-cbd65f0a37ce.PNG'
+![0705_12](https://user-images.githubusercontent.com/38846776/60703929-fa241180-9f3d-11e9-895d-cbd65f0a37ce.PNG)
 
 
 
-????
+
