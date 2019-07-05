@@ -5,7 +5,7 @@ subtitle: 'Spring 개인 프로젝트'
 date: 2019-07-05
 categories: Spring
 author: JY
-cover: ![IndexLogo](./img/IndexLogo.png)
+cover: ![IndexLogo](https://user-images.githubusercontent.com/38846776/60691645-376fab80-9f0c-11e9-8b47-293ba3cd7c81.png)
 tags: Spring
 ---
 
