@@ -5,7 +5,7 @@ subtitle: 'Spring 개인 프로젝트'
 date: 2019-07-05
 categories: Spring
 author: JY
-cover: 'https://user-images.githubusercontent.com/38846776/60692229-e9f53d80-9f0f-11e9-9db0-57af4176da3a.png' 
+cover: 'https://user-images.githubusercontent.com/38846776/60692279-32acf680-9f10-11e9-8066-17da1c2cea4b.png'
 tags: Spring
 ---
 
