@@ -38,7 +38,7 @@ tags: Spring, Maven, GitHub
 3. Tomcat 실행해보기 (v8.5.35 사용) 
 - console에 오류가 찍힌다.
 ![0705_5](https://user-images.githubusercontent.com/38846776/60694051-b4ece900-9f17-11e9-81c8-59f684361eb5.PNG)
-읽어보니 ```[The absolute uri: [http://java.sun.com/jsp/jstl/core] cannot be resolved```
+읽어보니 ```[The absolute uri: [http://java.sun.com/jsp/jstl/core] cannot be resolved``
 라는 오류가 눈에 띈다. 
 
 - jstl jar 파일을 프로젝트에 넣어준다.
@@ -51,14 +51,13 @@ tags: Spring, Maven, GitHub
 - 다시 톰캣을 실행했을 때, 정상적으로 home 페이지가 나오는 것을 확인.
 ![0705_7](https://user-images.githubusercontent.com/38846776/60700466-fccd3980-9f32-11e9-8ba1-5ce0494d4d94.PNG)
 콘솔에서는 HomeController에서 적혀진 로그에 따라 다음과 같이 출력된다.
-```
-INFO : com.jy.ger.HomeController - Welcome home! The client locale is ko_KR.
-```
+```INFO : com.jy.ger.HomeController - Welcome home! The client locale is ko_KR.``
 
 4. pom.xml의 설정 변경
 <properties>태그의 내용을 다음과 같이 변경
+	
 ```
-	<properties>
+<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>5.0.8.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.8.13</org.aspectj-version>
@@ -69,7 +68,7 @@ INFO : com.jy.ger.HomeController - Welcome home! The client locale is ko_KR.
 5. project faects 변경
 프로젝트 alt + Enter를 통해 properties의 project facets를 변경한다.
 - JAVA의 버전을 1.8로
-- Runtimes탭의 서버에 체크
+- Runtimes 탭의 서버에 체크
 
 
 ![0705_8](https://user-images.githubusercontent.com/38846776/60700888-77e31f80-9f34-11e9-9056-a5358ee2d8cf.PNG)
@@ -82,11 +81,15 @@ INFO : com.jy.ger.HomeController - Welcome home! The client locale is ko_KR.
 - 메이븐 config폴더 안의 settings.xml파일 워드패드/노트패드로 열기
 <localRepository></localRepository> 태그를 검색을 통해 찾아서 주석을 해제하고
 태그안에 경로 붙여넣고 저장
+
 ```
 <localRepository>D:/JY/DEV/apache-maven-3.6.0/respository</localRepository>
 ```
+
 - 이클립스에서 window > preference > maven > userSettings 으로 이동
+
 ![0705_10](https://user-images.githubusercontent.com/38846776/60702082-cc889980-9f38-11e9-97b0-1912c31b7a70.PNG)
+
 borwse 버튼을 통해 경로를 방금 설정한 settings.xml까지 잡아준다.
 *메이븐 업데이트까지 해주자*
 
@@ -99,29 +102,31 @@ borwse 버튼을 통해 경로를 방금 설정한 settings.xml까지 잡아준�
 ![0705_11](https://user-images.githubusercontent.com/38846776/60702947-52a5df80-9f3b-11e9-8795-cf9060c0d1ad.PNG)
 
 8. web.xml
-```
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:root-context.xml</param-value>
-	</context-param>
-	
-	<!-- Creates the Spring Container shared by all Servlets and Filters -->
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
 
-	<servlet>
-		<servlet-name>action</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/config/action-servlet.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
 ```
+<context-param>
+	<param-name>contextConfigLocation</param-name>
+	<param-value>classpath:root-context.xml</param-value>
+</context-param>
+
+<listener>
+	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+
+<servlet>
+	<servlet-name>action</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/config/action-servlet.xml</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+```
+
 
 9. <listener> 태그 주석 처리하고 webapp 아래에 index.jsp 생성하고 서버 실행
 --> 성공적으로 인덱스 페이지 로드
+
 ![0705_12](https://user-images.githubusercontent.com/38846776/60703929-fa241180-9f3d-11e9-895d-cbd65f0a37ce.PNG)
 
