@@ -5,7 +5,7 @@ subtitle: 'Spring 개인 프로젝트'
 date: 2019-07-05
 categories: Spring
 author: JY
-cover: ![IndexLogo](./upload/IndexLogo.png)
+cover: ![IndexLogo](./img/IndexLogo.png)
 tags: Spring
 ---
 
@@ -19,3 +19,4 @@ tags: Spring
 - 
 
 1. 
+dsad
